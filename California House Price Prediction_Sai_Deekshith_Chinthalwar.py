@@ -416,6 +416,3 @@ np.savetxt("predictions_housing.txt", rnd_search.predict(df_test), delimiter=','
 
 rnd_search.predict(df_test).size
 
-"""# Your Solution:
-In the quest to find the best machine learning classifier for the housing dataset, I employed a RandomForestRegressor within a comprehensive pipeline. The preprocessing steps involved both numerical and categorical features, using a ColumnTransformer to apply specific transformations to each type. The RandomForestRegressor was chosen for its ability to capture complex relationships within the data because of its least crossvalidation means squared error value. To identify optimal hyperparameter settings, a GridSearchCV was employed with varying values for the 'max_features' parameter. This process involved cross-validating the model using a 3-fold cross-validation strategy to ensure robust performance assessment. The best-performing configuration was found to be when 'max_features' was set to 190. This classifier demonstrated superior predictive capabilities, striking a balance between capturing informative features and avoiding overfitting. Overall, the RandomForestRegressor, with carefully tuned hyperparameters and thorough preprocessing, emerged as the top-performing model for predicting housing prices in this scenario.
-"""
